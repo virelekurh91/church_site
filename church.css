@@ -1,0 +1,103 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', Helvetica, sans-serif;
+    background: rgb(63, 80, 143);
+    color: aliceblue;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Center and style logo image */
+.img {
+    display: block;
+    margin: 20px auto;
+    max-width: 250px;
+    height: auto;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+/* Church name */
+.churchname {
+    font-size: 3rem;
+    margin: 20px 0 40px 0;
+    color: #f0f8ff;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+}
+
+/* Social links container */
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+/* Individual social link styles */
+.social-link {
+    background-color: rgb(24, 22, 39);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 18px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-link i {
+    font-size: 2.5rem;
+}
+
+/* Hover effects for each social media */
+.social-link:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+}
+
+.social-link.youtube:hover {
+    background-color: #FF0000;
+    color: white;
+}
+
+.social-link.tiktok:hover {
+    background-color: #69C9D0;
+    color: black;
+}
+
+.social-link.instagram:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    color: white;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 480px) {
+    .churchname {
+        font-size: 2.2rem;
+        margin-bottom: 30px;
+    }
+
+    .social-link {
+        font-size: 1.4rem;
+        padding: 14px 20px;
+    }
+
+    .social-link i {
+        font-size: 2rem;
+    }
+
+    .img {
+        max-width: 180px;
+    }
+}
